@@ -13,7 +13,23 @@
  })
  document.write(numero * multiplicar);
    // ejrcicios 2
-   // me falta completar :(
+   
+   var numeros =[78456203,23456784,23456782]; 
+var separar = "784";
+var resultado = numeros.filter(selec);
+function selec (num) {
+  var primeras = num.toString().substr(0,3);
+  var ultimas = num.toString().substr(-3);
+  if(primeras == separar || ultimas == separar){ 
+    return true;
+    
+     
+     }else{
+       return false;
+     }
+  
+}
+console.log(resultado);
    
 
 
