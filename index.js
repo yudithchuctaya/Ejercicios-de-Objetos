@@ -3,20 +3,33 @@
 
  //ejercicio 1
 
+  var assert = require('assert');
+function multiArray( array,numero){
+
      var array = [4 , 4, 5, 12];
      var numero =  9;
      var  multiplicar = array.reduce(function( nume1 , arry2){
   
      var result =  nume1 * arry2;
   
- return result;
+   return result;
   
- })
- document.write(numero * multiplicar);
-   
+ });
+ return(numero * multiplicar);
+}
+
+
+
+   describe('Ejercicio 1', function(){
+    it('Prueba de [4,4,5,12] y 9 ', function(){
+      assert.equal(8640, multiArray([4,4,5,12], 9));
+    });
+  });
    // ejrcicios 2
    
-     var numeros =[78456203,23456784,23456782]; 
+  var assert = require('assert');
+function telefonos( numeros,separar){
+      var numeros =[78456203,23456784,23456782]; 
      var separar = "784";
      var resultado = numeros.filter(selec);
 function selec (num) {
@@ -31,8 +44,11 @@ function selec (num) {
      }
   
   }
-console.log(resultado);
+  return(resultado);
    
+
+}
+ 
 
 
     //ejercicio 3
@@ -129,7 +145,7 @@ function caracter(nombre, dia, mes, aniodeNacimiento, anioActual){
 
      //ejercicio 3
 
-     var mi_saludo = new persona (  " yudith", 18 , "leer");
+    var mi_saludo = new persona (  " yudith", 18 , "leer");
 
 function persona ( nombre, edad , pasatiempo){
   
