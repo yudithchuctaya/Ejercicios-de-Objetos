@@ -1,12 +1,13 @@
 
 // EJERCICIOS DE ARREGLOS
+
  //ejercicio 1
 
-   var array = [4 , 4, 5, 12];
-   var numero =  9;
-  var  multiplicar = array.reduce(function( nume1 , arry2){
+     var array = [4 , 4, 5, 12];
+     var numero =  9;
+     var  multiplicar = array.reduce(function( nume1 , arry2){
   
- var result =  nume1 * arry2;
+     var result =  nume1 * arry2;
   
  return result;
   
@@ -15,12 +16,12 @@
    
    // ejrcicios 2
    
-   var numeros =[78456203,23456784,23456782]; 
-var separar = "784";
-var resultado = numeros.filter(selec);
+     var numeros =[78456203,23456784,23456782]; 
+     var separar = "784";
+     var resultado = numeros.filter(selec);
 function selec (num) {
-  var primeras = num.toString().substr(0,3);
-  var ultimas = num.toString().substr(-3);
+     var primeras = num.toString().substr(0,3);
+     var ultimas = num.toString().substr(-3);
   if(primeras == separar || ultimas == separar){ 
     return true;
     
@@ -34,7 +35,7 @@ console.log(resultado);
    
 
 
-     //ejercicio 3
+    //ejercicio 3
 
 
 var aleatorio = [ 7, 21 ,44, 80 ,77 ,35];
@@ -90,38 +91,41 @@ aleatorio.forEach(function multiplos(valor, index, aleatorio) {
   }
 })
     document.write(res);
+
      //EJERCICIOS DE OBJETOS 
+
      //ejercicio 1
+
      var _resultado = new rectangulo(40 , 12);
 
 function rectangulo  ( base , altura){
   
- this.base = base;
- this.altura = altura ;
+     this.base = base;
+     this.altura = altura ;
 
- this.calcular_area = function (){
+     this.calcular_area = function (){
     return this.base * this.altura ;
  }
  }
-document.write(_resultado.calcular_area());
+    document.write(_resultado.calcular_area());
 
 
 
      //ejercicio 2
 
 function caracter(nombre, dia, mes, aniodeNacimiento, anioActual){
-  this.nombre = nombre;
-   this.dia = dia;
-   this.mes = mes;
-   this.aniodeNac = aniodeNacimiento;
-  this.anioActual = anioActual;
+    this.nombre = nombre;
+    this.dia = dia;
+    this.mes = mes;
+    this.aniodeNac = aniodeNacimiento;
+    this.anioActual = anioActual;
 }
-var resultado = new caracter("Su",23 , 8 ,1991 , 2017);
+    var resultado = new caracter("Su",23 , 8 ,1991 , 2017);
 
-var edad = resultado.anioActual - resultado.aniodeNac;
-var res ="La edad actual de " + resultado.nombre + " es "+ edad;
+    var edad = resultado.anioActual - resultado.aniodeNac;
+    var res ="La edad actual de " + resultado.nombre + " es "+ edad;
 
-document.write(res);
+   document.write(res);
 
      //ejercicio 3
 
@@ -129,9 +133,9 @@ document.write(res);
 
 function persona ( nombre, edad , pasatiempo){
   
- this.nombre = nombre;
- this.edad = edad ;
- this.pasatiempo = pasatiempo ;
+    this.nombre = nombre;
+    this.edad = edad ;
+    this.pasatiempo = pasatiempo ;
 }
 
     document.write("hola  soy"   +  mi_saludo.nombre +  " tengo"  +   mi_saludo.edad +" años y me gusta "+ mi_saludo.pasatiempo) ;
