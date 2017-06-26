@@ -12,6 +12,7 @@
   
  })
  document.write(numero * multiplicar);
+   
    // ejrcicios 2
    
    var numeros =[78456203,23456784,23456782]; 
@@ -24,11 +25,11 @@ function selec (num) {
     return true;
     
      
-     }else{
+   }else{
        return false;
      }
   
-}
+  }
 console.log(resultado);
    
 
